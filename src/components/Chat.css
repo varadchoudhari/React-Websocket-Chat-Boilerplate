@@ -1,0 +1,50 @@
+.chat-thread {
+	margin-top: 10px;
+	height: 750px;
+	overflow: auto;
+}
+
+
+.form-components{
+	position: fixed;
+	margin-bottom: 10px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-left: 10px;
+}
+
+.container {
+	width: 100%;
+}
+
+.bubble {
+	position: relative;
+	background: #FFFFCC;
+	border: 1px solid #FFCC00;
+    max-width: 500px;
+    padding:10px;
+    font-family:arial;
+		right:0;
+    font-size:14px;
+    border-radius:6px;
+		margin-bottom: 10px;
+
+}
+.bubble:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.bubble:before {
+	border-color: rgba(255, 204, 0, 0);
+	border-right-color: #FFCC00;
+	border-width: 16px;
+	margin-top: -16px;
+}
